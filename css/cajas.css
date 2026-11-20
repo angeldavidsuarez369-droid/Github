@@ -1,0 +1,99 @@
+/* ==========================================
+   Unidad 05 y 06: Cajas, Espacios y Tablas
+   ========================================== */
+
+/* Contenedor principal centrado */
+.header__contenedor,
+.main,
+.footer {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Espaciado básico en secciones y elementos de texto */
+section,
+article,
+blockquote,
+.listas,
+.formulario {
+    margin-bottom: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+dl {
+    margin-bottom: 0.75rem;
+}
+
+/* Portada con gradiente suave y altura mínima en vh (RF-03.3 y RF-06.4) */
+.hero {
+    min-height: 45vh;
+    padding: 2rem 1.5rem;
+    border-radius: 0.75rem;
+    background: linear-gradient(135deg, var(--color-principal), var(--color-secundario));
+    color: var(--color-blanco);
+}
+
+/* Tarjeta de sede y bloques destacados */
+.sede,
+blockquote,
+.formulario {
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-secundario);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+}
+
+/* Imágenes flexibles y listas sin viñetas donde corresponda (RF-05.2 y RF-07.1) */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.4rem;
+}
+
+.nav__lista,
+.indice-interno ul {
+    list-style: none;
+}
+
+/* Tablas legibles y con desplazamiento si no caben (RF-05.2 y RF-05.5) */
+.tabla-contenedor {
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+}
+
+.tabla-precios {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--color-blanco);
+}
+
+.tabla-precios caption {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.tabla-precios th,
+.tabla-precios td {
+    border: 1px solid var(--color-secundario);
+    padding: 0.65rem 0.85rem;
+    text-align: left;
+}
+
+/* Alinear precios (última columna) a la derecha (RF-05.2) */
+.tabla-precios th:last-child,
+.tabla-precios td:last-child {
+    text-align: right;
+}
+
+/* Filas alternas en tabla (RF-04.4) */
+.tabla-precios tbody tr:nth-child(even) {
+    background-color: var(--color-fondo);
+}

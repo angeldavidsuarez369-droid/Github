@@ -1,0 +1,29 @@
+/* ==========================================
+   Unidad 03 y 05: Base y Variables Globales
+   ========================================== */
+
+:root {
+    /* Paleta de colores de la cafetería */
+    --color-principal: #3a2e2b;   /* Café oscuro / texto principal */
+    --color-secundario: #8c6d62; /* Café claro / acentos */
+    --color-fondo: #f9f6f0;      /* Fondo crema suave */
+    --color-blanco: #ffffff;     /* Blanco para tarjetas */
+    --color-acento: #d97706;     /* Tono ámbar/café cálido para botones */
+}
+
+/* Aplicar box-sizing a todos los elementos (RF-05.4) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%; /* Unidad base para rem (RF-06.1) */
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-principal);
+    font-family: sans-serif; /* Se complementará en tipografia.css */
+}

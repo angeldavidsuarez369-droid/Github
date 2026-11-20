@@ -1,0 +1,63 @@
+/* ==========================================
+   Unidad 07: CSS Grid y Diseño Adaptable
+   ========================================== */
+
+/* Base móvil primero (1 columna y separación con gap) */
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.header__contenedor,
+.nav__lista,
+.galeria-sedes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Cabecera, portada y pie a todo el ancho */
+.header,
+.hero,
+.footer {
+    grid-column: 1 / -1;
+}
+
+/* Galería adaptable automática sin media queries (RF-07.5) */
+.galeria-sedes {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    width: 100%;
+}
+
+/* Primer punto de ruptura: desde 600px (2 columnas) */
+@media (min-width: 600px) {
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav__lista {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .hero,
+    .sede--destacada {
+        grid-column: span 2;
+    }
+}
+
+/* Segundo punto de ruptura: desde 900px (3 columnas) */
+@media (min-width: 900px) {
+    .main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .header__contenedor {
+        grid-template-columns: 1fr auto;
+        align-items: center;
+    }
+
+    .hero {
+        grid-column: 1 / -1;
+    }
+}

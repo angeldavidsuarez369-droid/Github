@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Altiplano - Carta</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/tipografia.css">
+    <link rel="stylesheet" href="css/cajas.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__contenedor">
+            <h2 class="header__logo">☕ Café Altiplano</h2>
+            <nav class="nav">
+                <ul class="nav__lista">
+                    <li><a href="index.html" class="nav__enlace">Inicio</a></li>
+                    <li><a href="carta.html" class="nav__enlace nav__enlace--activo">Carta</a></li>
+                    <li><a href="sedes.html" class="nav__enlace">Sedes</a></li>
+                    <li><a href="reservas.html" class="nav__enlace">Reservas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="seccion">
+            <h1>Nuestra Carta</h1>
+            <p>Conoce nuestras bebidas preparadas con granos de origen y acompañamientos artesanales.</p>
+
+            <!-- Índice con anclas internas -->
+            <nav class="indice-interno">
+                <ul>
+                    <li><a href="#bebidas">Bebidas Calientes y Frías</a></li>
+                    <li><a href="#metodos">Métodos de Filtrado</a></li>
+                </ul>
+            </nav>
+
+            <section id="bebidas">
+                <h2>Bebidas</h2>
+                <table class="tabla-precios">
+                    <caption>Precios de cafés principales</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Bebida</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Espresso</th>
+                            <td>Café corto, intenso y aromático.</td>
+                            <td>$6.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cappuccino</th>
+                            <td>Espresso con leche texturizada y espuma.</td>
+                            <td>$8.500</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Latte Frío</th>
+                            <td>Café de especialidad sobre hielo y leche.</td>
+                            <td>$9.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Café Altiplano. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

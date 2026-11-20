@@ -1,0 +1,86 @@
+/* ==========================================
+   Unidad 04: Componentes, BEM y Estados
+   ========================================== */
+
+/* Enlaces del menú y navegación */
+.nav__enlace {
+    display: inline-block;
+    padding: 0.45rem 0.75rem;
+    text-decoration: none;
+    color: var(--color-principal);
+    border-radius: 0.35rem;
+}
+
+.nav__enlace--activo {
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
+    font-weight: bold;
+}
+
+.nav__enlace:hover {
+    background-color: rgba(58, 46, 43, 0.12);
+}
+
+/* Botón principal */
+.boton {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.7rem 1.25rem;
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
+    text-decoration: none;
+    border: 2px solid var(--color-acento);
+    border-radius: 0.4rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: var(--color-principal);
+    border-color: var(--color-principal);
+}
+
+/* Foco visible en menú, botones y campos del formulario (RF-04.3) */
+.nav__enlace:focus,
+.boton:focus,
+:is(input, select, textarea):focus {
+    outline: 3px solid var(--color-acento);
+    outline-offset: 2px;
+}
+
+/* Elementos del formulario con selector de atributo y combinador */
+.form__grupo {
+    margin-bottom: 1rem;
+}
+
+.form__grupo > label {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.55rem 0.7rem;
+    border: 1px solid var(--color-secundario);
+    border-radius: 0.35rem;
+    background-color: var(--color-blanco);
+    color: var(--color-principal);
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 0.35rem;
+}
+
+/* Enlaces externos con selector de atributo */
+a[target="_blank"]:not(.boton) {
+    color: var(--color-acento);
+    text-decoration: underline;
+}
