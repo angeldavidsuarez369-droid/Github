@@ -39,7 +39,7 @@ Se agregó la página `nosotros.html` con portada, índice con anclas internas, 
 | nosotros | 1 columna, sin scroll | 2 columnas, sin scroll | 3 columnas, sin scroll |
 
 ### 3. Tres medidas y escala tipográfica
-- **Escala tipográfica en `rem` (`2.25rem` / `1.75rem` / `1.25rem` / `1rem`)**: mantiene una jerarquía clara entre `h1`, `h2`, `h3` y texto base sin usar `px` en fuentes.
+- **Escala tipográfica en `rem` (`2.25rem` / `1.74rem` / `1.25rem` / `1rem`)**: mantiene una jerarquía clara entre `h1`, `h2`, `h3` y texto base sin usar `px` en fuentes.
 - **`max-width: 65ch` en párrafos y `55ch` en la cita**: controla el ancho de lectura para que las líneas no resulten cansadas.
 - **`min-height: 45vh` en la portada**: adapta la altura mínima del bloque inicial según el alto de la ventana.
 
