@@ -43,3 +43,29 @@ cite {
     font-size: 0.9rem;
     color: var(--color-secundario);
 }
+/* Escala tipográfica clara para Nuestra historia */
+.nosotros-main h1 {
+    font-size: 2.25rem;
+    line-height: 1.15;
+}
+
+.nosotros-main h2 {
+    font-size: 1.75rem;
+    line-height: 1.25;
+}
+
+.nosotros-main h3 {
+    font-size: 1.25rem;
+    line-height: 1.35;
+}
+
+.nosotros-main p,
+.nosotros-main dd {
+    font-size: 1rem;
+    max-width: 65ch;
+}
+
+.cita-fundadora {
+    font-style: italic;
+    max-width: 55ch;
+}

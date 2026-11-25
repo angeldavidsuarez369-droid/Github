@@ -84,3 +84,14 @@ a[target="_blank"]:not(.boton) {
     color: var(--color-acento);
     text-decoration: underline;
 }
+/* Selector de atributo, combinador y selector lógico en el formulario */
+.formulario input[required],
+.formulario select[required],
+.formulario textarea[required] {
+    border-color: var(--color-secundario);
+}
+
+.nosotros-main :is(a, button, input, select, textarea):focus {
+    outline: 3px solid var(--color-acento);
+    outline-offset: 2px;
+}
