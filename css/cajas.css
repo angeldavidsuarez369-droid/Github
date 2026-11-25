@@ -97,3 +97,94 @@ img {
 .tabla-precios tbody tr:nth-child(even) {
     background-color: var(--color-fondo);
 }
+/* Portada de Nuestra historia con gradiente, imagen de fondo y transparencia */
+.nosotros-hero {
+    position: relative;
+    min-height: 45vh;
+    background:
+        linear-gradient(135deg, rgba(58, 46, 43, 0.85), rgba(140, 109, 98, 0.78)),
+        url("../imagenes/sede-centro.jpg") center / cover no-repeat;
+    color: var(--color-blanco);
+}
+
+.nosotros-indice {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.45rem;
+    background-color: rgba(249, 246, 240, 0.16);
+}
+
+.nosotros-indice a {
+    color: var(--color-blanco);
+    text-decoration: underline;
+}
+
+/* Línea de tiempo sin números por defecto y con borde lateral */
+.timeline {
+    list-style: none;
+    border-left: 3px solid var(--color-secundario);
+    padding-left: 1.25rem;
+}
+
+.timeline__hito {
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-secundario);
+    border-radius: 0.4rem;
+}
+
+.timeline__hito:first-child {
+    border-left: 4px solid var(--color-acento);
+}
+
+.timeline__anio {
+    display: inline-block;
+    font-weight: bold;
+    color: var(--color-acento);
+    margin-bottom: 0.25rem;
+}
+
+/* Tarjetas del equipo */
+.persona {
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-secundario);
+    border-radius: 0.5rem;
+    padding: 1.1rem;
+}
+
+.persona--fundadora {
+    border: 2px solid var(--color-acento);
+}
+
+.persona__cargo {
+    font-weight: bold;
+    color: var(--color-secundario);
+}
+
+.persona__frase {
+    font-style: italic;
+}
+
+/* Cita destacada de la fundadora */
+.cita-fundadora {
+    border-left: 4px solid var(--color-acento);
+    padding: 1rem 1.25rem;
+    background-color: var(--color-blanco);
+    border-radius: 0.4rem;
+}
+
+/* Valores y glosario */
+.lista-valores,
+.glosario-lista {
+    padding-left: 1.25rem;
+}
+
+.glosario-lista dt {
+    font-weight: bold;
+    margin-top: 0.6rem;
+}
+
+.glosario-lista dd {
+    margin-left: 0;
+}

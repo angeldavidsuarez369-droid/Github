@@ -61,3 +61,44 @@
         grid-column: 1 / -1;
     }
 }
+/* Disposición específica de Nuestra historia en Grid */
+.nosotros-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.nosotros-hero,
+.nosotros-cita,
+.nosotros-contacto {
+    grid-column: 1 / -1;
+}
+
+.equipo-grid,
+.tabla-cifras {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 1rem;
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .nosotros-main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nosotros-historia {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 900px) {
+    .nosotros-main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .nosotros-historia {
+        grid-column: span 2;
+    }
+}
